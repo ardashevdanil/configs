@@ -27,17 +27,19 @@ Plug 'jparise/vim-graphql'
 Plug 'digitaltoad/vim-jade'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'hynek/vim-python-pep8-indent'
 "Plug 'valloric/youcompleteme'
 
 " Initialize plugin system
 call plug#end()
 
-syntax enable
+syntax on 
 
 set number
 set expandtab
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
 set smartindent
 set hlsearch
 set incsearch
@@ -47,7 +49,10 @@ set encoding=UTF-8
 set nocompatible
 set path+=**
 set wildmenu
-filetype plugin on
+
+" Fix colorcheme in tmux
+set t_Co=256
+set background=dark
 
 " MAPPINGS: 
 map <C-n> :NERDTreeToggle<CR>
