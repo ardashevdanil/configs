@@ -28,6 +28,7 @@ Plug 'digitaltoad/vim-jade'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'hynek/vim-python-pep8-indent'
+Plug 'jparise/vim-graphql'
 "Plug 'valloric/youcompleteme'
 
 " Initialize plugin system
@@ -37,9 +38,9 @@ syntax on
 
 set number
 set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set smartindent
 set hlsearch
 set incsearch
